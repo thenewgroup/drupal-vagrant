@@ -25,10 +25,13 @@ Usage
 git clone git@github.com:thenewgroup/drupal-vagrant.git
 
 Add this line to /etc/hosts
-  www.drupal7.dev 192.168.44.44
+
+www.drupal7.dev 192.168.44.44
 
 cd drupal-vagrant
+
 vagrant up
+
 vagrant ssh
 
 
