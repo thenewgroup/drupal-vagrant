@@ -1,13 +1,14 @@
 drupal-vagrant
 ==============
 
-High performance vagrant box for local Drupal development by www.thenewgroup.com.
+High performance vagrant box for local Drupal development by www.thenewgroup.com. NFS enabled by default with 4 CPUs and 3.5 gigs of ram.
 
-Contains:
+Virtual Machine Contains:
   - nginx
   - php5.5 (adjusted for Drupal)
   - Opcache enabled
   - APCu
+  - Ruby with Bundler
   - Mariadb (adjusted for Drupal)
   - Solr
   - Elastic
