@@ -2,6 +2,7 @@ drupal-vagrant
 ==============
 
 High performance vagrant box for local Drupal development by www.thenewgroup.com.
+
 Contains:
   - nginx
   - php5.5 (adjusted for Drupal)
