@@ -13,7 +13,11 @@ Virtual Machine Contains:
   - Solr
   - Elastic
 
-Mariadb password
+SQL Import
+=============
+Drop a SQL file named anything that ends with .sql and it will be imported on first boot.
+
+Mariadb Password
 ==============
 root:root
 
@@ -36,3 +40,9 @@ vagrant up
 vagrant ssh
 
 
+Known Issues
+==============
+
+The puppet deploy can get hung on the PHP 5.5 repo, if this happens, control C, then vagrant halt; vagrant up --provision
+
+vagrant up --provision will fail after the server has been provisioned completely. You must vagrant destroy; vagrant up.
