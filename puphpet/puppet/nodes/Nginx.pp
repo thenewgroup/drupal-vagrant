@@ -26,11 +26,11 @@ if hash_key_equals($nginx_values, 'install', 1) {
   }
 
   if downcase($::provisioner_type) in $nginx_provider_types {
-    $webroot_location_group = 'www-data'
-    $vhost_docroot_group    = undef
+    $webroot_location_group = 'vagrant'
+    $vhost_docroot_group    = vagrant
   } else {
-    $webroot_location_group = undef
-    $vhost_docroot_group    = 'www-user'
+    $webroot_location_group = vagrant
+    $vhost_docroot_group    = 'vagrant'
   }
 
   if ! defined(File[$webroot_location]) {

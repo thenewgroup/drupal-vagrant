@@ -138,7 +138,7 @@ if hash_key_equals($mariadb_values, 'install', 1) {
 
     class { 'puphpet::adminer':
       location    => "${mariadb_adminer_webroot_location}/adminer",
-      owner       => 'www-data',
+      owner       => 'vagrant',
       php_package => $mariadb_php_package
     }
   }

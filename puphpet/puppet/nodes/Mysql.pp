@@ -103,7 +103,7 @@ if hash_key_equals($mysql_values, 'install', 1) {
 
     class { 'puphpet::adminer':
       location    => "${mysql_adminer_webroot_location}/adminer",
-      owner       => 'www-data',
+      owner       => 'vagrant',
       php_package => $mysql_php_package
     }
   }
